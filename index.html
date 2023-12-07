@@ -11,10 +11,9 @@
   <body>
     <!--  body container  -->
 
-    <div class="bodyContainer bg-blue-600">
-      <div class="bodyWrapper bg-red-400">
+    <div class="bodyContainer">
+      <div class="bodyWrapper">
         <!-- dashboard section starts  -->
-
         <div
           class="dashboardContainer fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
           aria-label="Sidebar"
@@ -117,14 +116,123 @@
         <!-- dashboard section ends  -->
 
         <!-- component sections starts  -->
-        <div class="conponentSection p-4 sm:ml-64 bg-blue-400">
+        <div class="conponentSection p-3 sm:ml-64 bg-gray-200 h-screen">
           <div
-            class="componentWrapper p-3 border-2 border-gray-200 rounded-md dark:border-gray-700 bg-green-300"
+            class="componentWrapper h-full rounded bg-pink-300 flex justify-between"
           >
-            <h1>component section</h1>
-            <h1>component section</h1>
-            <h1>component section</h1>
-            <h1>component section</h1>
+            <!-- leftFormSection starts  -->
+            <div
+              class="leftFormSection bg-white py-8 px-1 w-[30%] flex flex-col justify-center items-center rounded-md shadow-lg"
+            >
+              <!-- coach input  -->
+              <div class="coachInput flex justify-between mb-4">
+                <label for="coach" class="pr-1 text-lg">Coach ID : </label>
+                <input
+                  type="text"
+                  id="coach"
+                  class="outline-none text-xs p-2 rounded bg-gray-100 border border-gray-300"
+                />
+              </div>
+              <!-- coach input  -->
+
+              <!-- name input  -->
+              <div class="nameInput flex justify-between mb-4">
+                <label for="name" class="pr-1 text-lg">Name : </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="outline-none text-xs p-2 rounded bg-gray-100 border border-gray-300"
+                />
+              </div>
+              <!-- name input  -->
+
+              <!-- address input  -->
+              <div class="nameInput flex justify-between mb-4">
+                <label for="address" class="pr-1 text-lg">Address : </label>
+                <textarea
+                  id="address"
+                  rows="3"
+                  class="outline-none text-xs p-2 rounded bg-gray-100 border border-gray-300"
+                ></textarea>
+              </div>
+              <!-- address input  -->
+
+              <!-- gender input  -->
+              <div class="nameInput flex justify-between mb-4">
+                <label for="gender" class="pr-1 text-lg">Gender : </label>
+
+                <select id="gender" className=" border border-red-500 ">
+                  <option class="  " value="">Choose gender</option>
+                  <option class="  " value="male">Male</option>
+                  <option class="  " value="female">Female</option>
+                </select>
+              </div>
+              <!-- gender input  -->
+
+              <!-- phone number input  -->
+              <div class="nameInput flex justify-between mb-4">
+                <label for="number" class="pr-1 text-lg">Phone number : </label>
+                <input
+                  type="number"
+                  id="number"
+                  class="outline-none text-xs p-2 rounded bg-gray-100 border border-gray-300"
+                />
+              </div>
+              <!-- phone number input  -->
+
+              <!-- status input  -->
+
+              <div class="nameInput flex justify-between mb-4">
+                <label for="gender" class="pr-1 text-lg">Status : </label>
+
+                <select
+                  id="gender"
+                  className="bg-gray-500 text-gray-900 rounded-lg  block w-full p-2.5 border-none outline-none "
+                >
+                  <option class="  " value="">Choose status</option>
+                  <option class="  " value="status">status1</option>
+                  <option class="  " value="status">status1</option>
+                </select>
+              </div>
+
+              <!-- status input  -->
+
+              <!-- button section  -->
+              <div
+                class="buttonContainer mt-8 grid grid-cols-2 gap-x-5 gap-y-4"
+              >
+                <button class="py-2 px-5 text-gray-50 bg-violet-800 rounded">
+                  Add
+                </button>
+                <!--  -->
+                <button class="py-2 px-5 text-gray-50 bg-violet-800 rounded">
+                  Update
+                </button>
+                <!--  -->
+                <button class="py-2 px-5 text-gray-50 bg-violet-800 rounded">
+                  Reset
+                </button>
+                <!--  -->
+                <!--  -->
+                <button class="py-2 px-5 text-gray-50 bg-violet-800 rounded">
+                  Delete
+                </button>
+                <!--  -->
+              </div>
+              <!-- button section  -->
+
+              <!--  -->
+            </div>
+            <!-- leftFormSection ends  -->
+
+            <!-- right table section starts  -->
+            <div class="rightTableSection bg-lime-300 w-[68%]">
+              <h1>right table</h1>
+              <h1>right table</h1>
+              <h1>right table</h1>
+              <h1>right table</h1>
+            </div>
+            <!-- right table section ends -->
           </div>
         </div>
 
