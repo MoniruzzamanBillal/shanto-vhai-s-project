@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--  body container  -->
+
+    <div class="bodyContainer">
+      <div class="bodyWrapper">
+        <!-- dashboard section starts  -->
+        <div
+          class="dashboardContainer fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+          aria-label="Sidebar"
+        >
+          <div class="h-full px-3 py-4 overflow-y-auto bg-violet-800 relative">
+            <!-- dashboard top section  -->
+            <div
+              class="dashBoardTop mb-8 flex flex-col justify-center items-center text-gray-50 border-b-2 border-gray-200 pb-3"
+            >
+              <div class="iconSection pb-1">
+                <img src="/images/icons/admin2.png" class="text-white" alt="" />
+              </div>
+
+              <div class="bottomText text-xl text-center leading-[1.5rem]">
+                <h1>Welcome,</h1>
+                <h1 class="font-semibold">Admin</h1>
+              </div>
+            </div>
+            <!-- dashboard top section  -->
+
+            <!-- dashboard lists  -->
+            <div class="dashBoardLinks">
+              <ul class="space-y-2 font-medium">
+                <li>
+                  <a
+                    href="#"
+                    class="border border-gray-50 flex justify-center items-center p-2 text-gray-100 rounded hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    <p class="ms-3">Dashboard</p>
+                  </a>
+                </li>
+                <!--  -->
+                <li>
+                  <a
+                    href="#"
+                    class="border border-gray-50 flex justify-center items-center p-2 text-gray-100 rounded hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    <p class="ms-3">Coaches</p>
+                  </a>
+                </li>
+                <!--  -->
+                <li>
+                  <a
+                    href="#"
+                    class="border border-gray-50 flex justify-center items-center p-2 text-gray-100 rounded hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    <p class="ms-3">Members</p>
+                  </a>
+                </li>
+                <!--  -->
+                <li>
+                  <a
+                    href="#"
+                    class="border border-gray-50 flex justify-center items-center p-2 text-gray-100 rounded hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    <p class="ms-3">Payment</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- dashboard lists ends   -->
+
+            <!-- logout  button starts  -->
+            <div class="logoutSection absolute bottom-3 left-3">
+              <div
+                class="logOutWrapper flex justify-between items-center cursor-pointer"
+              >
+                <div
+                  class="logoutIcon bg-violet-400 w-10 h-10 rounded-full shadow-lg"
+                >
+                  <img
+                    src="/images/icons/logout.png"
+                    class="w-full h-full p-2"
+                    alt=""
+                  />
+                </div>
+                <p class="text-lg pl-2 font-semibold text-gray-50">Logout</p>
+              </div>
+            </div>
+            <!-- logout  button ends  -->
+          </div>
+        </div>
+
+        <!-- hamburger menu icon starts  -->
+        <div
+          class="fixed bottom-[20px] h-[50px] right-[20px] sm:hidden flex flex-col justify-center gap-2 bg-gray-500 p-2 rounded cursor-pointer z-[20]"
+        >
+          <div
+            class="line duration-300 h-[5px] w-[40px] bg-white rounded"
+          ></div>
+          <div
+            class="line duration-300 h-[5px] w-[40px] bg-white rounded"
+          ></div>
+          <div
+            class="line duration-300 h-[5px] w-[40px] bg-white rounded"
+          ></div>
+        </div>
+        <!-- hamburger menu icon ends  -->
+        <!-- dashboard section ends  -->
+
+        <!-- component sections starts  -->
+        <div class="conponentSection p-5 sm:ml-64 bg-gray-200">
+          <div class="componentWrapper h-full rounded flex justify-between">
+            <!-- leftFormSection starts  -->
+            <div
+              class="leftFormSection bg-white px-2 w-[31%] flex flex-col justify-center items-center rounded-md shadow-lg"
+            >
+              <!-- coach input  -->
+              <div class="coachInput flex justify-between mb-4">
+                <label for="coach" class="pr-1 text-lg">Coach ID : </label>
+                <input
+                  type="text"
+                  id="coach"
+                  class="outline-none text-xs p-2 rounded bg-gray-100 border border-gray-300"
+                />
+              </div>
+              <!-- coach input  -->
+
+              <!-- name input  -->
+              <div class="nameInput flex justify-between mb-4">
+                <label for="name" class="pr-1 text-lg">Name : </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="outline-none text-xs p-2 rounded bg-gray-100 border border-gray-300"
+                />
+              </div>
+              <!-- name input  -->
+
+              <!-- address input  -->
+              <div class="nameInput flex justify-between mb-4">
+                <label for="address" class="pr-1 text-lg">Address : </label>
+                <textarea
+                  id="address"
+                  rows="3"
+                  class="outline-none text-xs p-2 rounded bg-gray-100 border border-gray-300"
+                ></textarea>
+              </div>
+              <!-- address input  -->
+
+              <!-- gender input  -->
+              <div class="nameInput flex justify-between mb-4">
+                <label for="gender" class="pr-1 text-lg">Gender : </label>
+
+                <select id="gender" className=" border border-red-500 ">
+                  <option class="  " value="">Choose gender</option>
+                  <option class="  " value="male">Male</option>
+                  <option class="  " value="female">Female</option>
+                </select>
+              </div>
+              <!-- gender input  -->
+
+              <!-- phone number input  -->
+              <div class="nameInput flex justify-between mb-4">
+                <label for="number" class="pr-1 text-lg">Phone number : </label>
+                <input
+                  type="number"
+                  id="number"
+                  class="outline-none text-xs p-2 rounded bg-gray-100 border border-gray-300"
+                />
+              </div>
+              <!-- phone number input  -->
+
+              <!-- status input  -->
+
+              <div class="nameInput flex justify-between mb-4">
+                <label for="gender" class="pr-1 text-lg">Status : </label>
+
+                <select
+                  id="gender"
+                  className="bg-gray-500 text-gray-900 rounded-lg  block w-full p-2.5 border-none outline-none "
+                >
+                  <option class="  " value="">Choose status</option>
+                  <option class="  " value="status">status1</option>
+                  <option class="  " value="status">status1</option>
+                </select>
+              </div>
+
+              <!-- status input  -->
+
+              <!-- button section  -->
+              <div
+                class="buttonContainer mt-8 grid grid-cols-2 gap-x-5 gap-y-4"
+              >
+                <button class="py-2 px-5 text-gray-50 bg-violet-800 rounded">
+                  Add
+                </button>
+                <!--  -->
+                <button class="py-2 px-5 text-gray-50 bg-violet-800 rounded">
+                  Update
+                </button>
+                <!--  -->
+                <button class="py-2 px-5 text-gray-50 bg-violet-800 rounded">
+                  Reset
+                </button>
+                <!--  -->
+                <!--  -->
+                <button class="py-2 px-5 text-gray-50 bg-violet-800 rounded">
+                  Delete
+                </button>
+                <!--  -->
+              </div>
+              <!-- button section  -->
+
+              <!--  -->
+            </div>
+            <!-- leftFormSection ends  -->
+
+            <!-- right table section starts  -->
+            <div
+              class="rightTableSection bg-gray-50 w-[68%] p-4 shadow-xl rounded-md"
+            >
+              <div class="relative overflow-x-auto rounded-t-md h-[34rem]">
+                <table class="w-full">
+                  <thead
+                    class="text-sm uppercase bg-violet-700 text-gray-50 text-center"
+                  >
+                    <tr>
+                      <th scope="col" class="px-6 py-3">Coach ID</th>
+                      <th scope="col" class="px-6 py-3">Name</th>
+                      <th scope="col" class="px-6 py-3">Address</th>
+                      <th scope="col" class="px-6 py-3">Gender</th>
+                      <th scope="col" class="px-6 py-3">Phone</th>
+                      <th scope="col" class="px-6 py-3">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white border text-sm text-center">
+                      <td class="px-6 py-4">CID-101</td>
+                      <td class="px-6 py-4">Marco Man</td>
+                      <td class="px-6 py-4">Address</td>
+                      <td class="px-6 py-4">Gender</td>
+                      <td class="px-6 py-4">123456789</td>
+                      <td class="px-6 py-4">Active</td>
+                    </tr>
+
+                    <!--  -->
+                    <!--  -->
+                    <!--  -->
+
+                    <!--  -->
+                    <!--  -->
+                    <!--  -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- right table section ends -->
+          </div>
+        </div>
+
+        <!-- component section ends -->
+
+        <!--  -->
+      </div>
+    </div>
+
+    <!--  body container  -->
+  </body>
+</html>
